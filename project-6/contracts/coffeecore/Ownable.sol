@@ -13,10 +13,6 @@ contract Ownable {
         emit TransferOwnership(address(0), origOwner);
     }
 
-    /// Look up the address of the owner
-    function owner() public view returns (address) {
-        return origOwner;
-    }
 
     /// Define a function modifier 'onlyOwner'
     modifier onlyOwner() {
